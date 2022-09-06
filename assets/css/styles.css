@@ -1,0 +1,179 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #131313;
+}
+
+.container {
+  width: inherit;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 20px;
+  align-items: center;
+}
+
+h1,
+h2,
+h3 {
+  padding: 0;
+  margin: 0;
+}
+
+.floating_button {
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  color: palevioletred;
+  background-color: #fff;
+  border: 0;
+  outline: 0;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 24px;
+}
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title h1 {
+  font-weight: 300;
+  text-align: center;
+}
+.modal {
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+}
+#modalclosebtn {
+  display: none;
+}
+.addlist_form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  gap: 12px;
+  background-color: #fff;
+  color: #131313;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 4px 5px 7px rgba(226, 51, 171, 0.418);
+}
+.addlist_form h3 {
+  margin: 0 auto;
+}
+.addlist_form > input {
+  height: 40px;
+  padding: 8px;
+  font-family: inherit;
+  font-size: inherit;
+  border-radius: 8px;
+}
+.button {
+  height: 40px;
+  border: none;
+  outline: none;
+  font-size: inherit;
+  font-family: inherit;
+  background-color: palevioletred;
+  color: #131313;
+  border-radius: 12px;
+}
+.btn_group {
+  display: flex;
+  justify-content: space-around;
+}
+#root_title {
+  top: 20px;
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#root {
+  margin-top: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.card {
+  width: 80%;
+  min-height: 100px;
+  background-color: palevioletred;
+  margin-bottom: 20px;
+  box-shadow: 4px 5px 6px rgba(0, 0, 0, 0.184);
+  padding: 16px;
+  border-radius: 12px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.card p {
+  color: #131313;
+  font-weight: 600;
+  padding: 0;
+  margin: 0;
+  margin-block-start: 0;
+}
+.card_delete_btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background-color: #131313;
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+}
+.detailorder {
+  width: inherit;
+  display: flex;
+  justify-content: space-between;
+}
+.today {
+  font-size: small;
+}
+.splash {
+  background-color: #131313;
+  color: palevioletred;
+  justify-content: center;
+  align-items: center;
+}
+
+.splash h1 {
+  font-size: 64px;
+}
+
+.btn_splash {
+  height: 40px;
+  width: 240px;
+  background-color: whitesmoke;
+  color: black;
+  border-radius: 100px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
